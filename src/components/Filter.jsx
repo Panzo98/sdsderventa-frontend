@@ -66,7 +66,7 @@ export default function Filter() {
         className="flex mb-4 xl:mb-0 justify-between xl:justify-normal"
       >
         <input
-          placeholder="Unesi ime i prezime"
+          placeholder="Унесите име и презиме"
           type="text"
           disabled
           className="px-2 text-sm bg-white border-b-gray-400 border-b-[1px] mr-4 outline-none"
@@ -74,17 +74,17 @@ export default function Filter() {
           onChange={(e) => setSearch(e.target.value)}
         />
         <button className="rounded border-[1px] px-4 text-xs h-full font-semibold hover:bg-[#042861] bg-[#06398b] text-white">
-          PRETRAŽI
+          ПРЕТРАЖИ
         </button>
       </form>
       <div className="flex justify-between xl:justify-normal">
-        <span className="mr-4">PRETRAŽI POD :</span>
+        <span className="mr-4">ПРЕТРАЖИ ПОД :</span>
         <select
           className="px-2 text-sm bg-white border-b-gray-400 border-b-[1px] "
           value={selectedCommite}
           onChange={(e) => setSelectedCommite(e.target.value)}
         >
-          <option value={0}>Svi odbori</option>
+          <option value={0}>Сви oдбори</option>
           {committes.map((elem, index) => {
             return (
               <option value={elem.id} key={index}>

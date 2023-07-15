@@ -7,18 +7,18 @@ export default function CreateCommitte() {
   const dispatch = useDispatch();
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (name === "") return alert("Polje za naziv odbora ne moze biti prazno!");
+    if (name === "") return alert("Поље за назив одбора не може бити празно!");
     try {
       let response = await axios.post(
         `${process.env.REACT_APP_APP_URL}/committes/create-committe`,
         { name },
         { headers: { Authorization: localStorage.getItem("token") } }
       );
-      alert("Uspjesno ste kreirali odbor!");
+      alert("Успјешно сте креирали одбор!");
       setName("");
       dispatch({ type: "UPDATE_COMMITTES", payload: response.data.committe });
     } catch (error) {
-      alert("Greska prilikom kreiranja odbora!");
+      alert("Грешка приликом креирања одбора!");
     }
   };
   return (
@@ -28,14 +28,14 @@ export default function CreateCommitte() {
         className="flex items-center justify-around h-12 w-full"
       >
         <input
-          placeholder="Unesi naziv odbora"
+          placeholder="Унесите назив одбора"
           type="text"
           className="px-2 lg:w-7/12 text-sm bg-white border-b-gray-400 border-b-[1px] outline-none"
           value={name}
           onChange={(e) => setName(e.target.value)}
         />
         <button className="w-4/12 lg:w-3/12  hover:bg-[#042861] bg-[#06398b] active:bg-primary-active-color transition duration-500 text-white text-sm lg:text-base lg:font-bold rounded cursor-pointer">
-          KREIRAJ
+          КРЕИРАЈ
         </button>
       </form>
     </div>

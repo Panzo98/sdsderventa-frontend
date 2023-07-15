@@ -15,26 +15,27 @@ export default function Navbar() {
         className=" text-xs lg:text-base text-white font-semibold px-0"
         to="/"
       >
-        ČLANOVI
+        ЧЛАНОВИ
       </Link>
       <Link
         className=" text-xs lg:text-base text-white font-semibold px-0"
         to="/committe"
       >
-        ODBORI
+        ОДБОРИ
       </Link>
+      <img src="logo.png" alt="logo" className="h-6" />
       <Link
         className=" text-xs lg:text-base text-white font-semibold px-0"
         to="/position"
       >
-        POZICIJE
+        ПОЗИЦИЈЕ
       </Link>
       {isLoggedIn ? (
         <span
           className=" text-xs lg:text-base text-white font-semibold px-0 cursor-pointer"
           onClick={handleLogout}
         >
-          ODJAVI SE
+          ОДЈАВИ СЕ
         </span>
       ) : // <svg
       //   onClick={handleLogout}

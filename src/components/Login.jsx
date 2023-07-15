@@ -39,31 +39,32 @@ export default function Login() {
   return (
     <div className="min-h-[calc(100vh-6rem)] items-center justify-center flex">
       <form
-        className="flex flex-col items-center bg-white shadow-xl border-[#00000010] border px-9 py-12 rounded-xl md:w-[400px] w-11/12"
+        className="flex flex-col items-center bg-white shadow-xl border-[#00000010] border px-9 pb-12 pt-6 rounded-xl md:w-[400px] w-11/12"
         onSubmit={Login}
       >
-        <h3 className="outline-none border-none leading-4 text-2xl font-bold">
+        <img src="logo.png" alt="logo" />
+        {/* <h3 className="outline-none border-none leading-4 text-2xl font-bold">
           Prijavi se
-        </h3>
+        </h3> */}
         <label className="color-[#080710] mt-8 self-start">
-          Korisničko ime
+          Корисничко име
         </label>
         <input
           value={username}
           className="h-12 w-full rounded px-2 mt-2 text-sm font-light outline-1 outline-black border  border-[#00000036]"
           onChange={(e) => setUsername(e.target.value)}
           type="text"
-          placeholder="Korisničko ime"
+          placeholder="Корисничко име"
           onKeyDown={handleKeyPress}
         ></input>
-        <label className="color-[#080710] mt-8 self-start">Lozinka</label>
+        <label className="color-[#080710] mt-8 self-start">Лозинка</label>
         <div className="w-full flex flex-col ">
           <input
             value={password}
             onChange={(e) => setPassword(e.target.value)}
             className="h-12 w-full rounded px-2 mt-2 text-sm font-light outline-1 outline-black border  border-[#00000036]"
             type={hidePassword ? "password" : "text"}
-            placeholder="Lozinka"
+            placeholder="Лозинка"
           ></input>
           <svg
             width="26"
@@ -90,7 +91,7 @@ export default function Login() {
         </div>
 
         <button className="mt-5 w-full  hover:bg-[#042861] bg-[#06398b] active:bg-primary-active-color transition duration-500 text-white py-4 text-lg font-bold rounded cursor-pointer">
-          Prijavi se
+          Пријави се
         </button>
       </form>
     </div>

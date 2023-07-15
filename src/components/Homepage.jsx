@@ -19,7 +19,7 @@ export default function Homepage() {
               : "rgba(107,114,128,0.6)",
           }}
         >
-          PRIKAZ ČLANOVA
+          ПРИКАЗ ЧЛАНОВА
         </span>
         <span
           className="w-6/12 flex items-center justify-center cursor-pointer transition"
@@ -30,7 +30,7 @@ export default function Homepage() {
               : "rgba(107,114,128,0.6)",
           }}
         >
-          DODAJ ČLANOVA
+          ДОДАЈ ЧЛАНА
         </span>
       </div>
 
@@ -43,25 +43,25 @@ export default function Homepage() {
             {data[0] && (
               <div className="flex w-full mb-2 text-[6px] xl:text-[10px]">
                 <span className="w-[5%] font-semibold flex items-center justify-center">
-                  ID
+                  ИД
                 </span>
                 <span className="w-[20%] flex items-center justify-center font-semibold">
-                  IME
+                  ИМЕ
                 </span>
                 <span className="w-[20%] flex items-center justify-center font-semibold">
-                  PREZIME
+                  ПРЕЗИМЕ
                 </span>
                 <span className="w-[15%] flex items-center justify-center font-semibold">
-                  ODBOR
+                  ОДБОР
                 </span>
                 <span className="w-[15%] flex items-center justify-center font-semibold">
-                  POZICIJA
+                  ПОЗИЦИЈА
                 </span>
                 <span className="w-[15%] flex items-center justify-center font-semibold">
-                  BR.TELEFONA
+                  БР. ТЕЛЕФОНА
                 </span>
                 <button className="w-[10%] flex items-center justify-center font-semibold">
-                  UKUPNO: {data.length}
+                  УКП: {data.length}
                 </button>
               </div>
             )}
@@ -72,7 +72,7 @@ export default function Homepage() {
             ) : (
               //TODO OVO ISPOD SE PRIKAZUJE ISPOD LOADERA
               <span className="flex w-full justify-center items-center text-gray-500 font-semibold xl:font-medium">
-                -- NEMA ZAPISA --
+                -- НЕМА ЗАПИСА --
               </span>
             )}
           </div>

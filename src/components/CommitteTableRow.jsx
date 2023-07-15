@@ -6,7 +6,7 @@ export default function CommitteTableRow({ data, newId }) {
   // const dispatch = useDispatch();
   const handleDelete = async () => {
     try {
-      alert("Kontaktirajte administratora da omoguci brisanje MO!");
+      alert("Контактирајте администратора да омогући брисање МО!");
       //   let response = await axios.delete(
       //     `${process.env.REACT_APP_APP_URL}/committes/delete-committe/${data.id}`,
       //     { headers: { Authorization: localStorage.getItem("token") } }

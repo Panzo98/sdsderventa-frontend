@@ -52,21 +52,21 @@ export default function NewMembers({ setEnableAddNewMember }) {
       >
         <div className="flex flex-col w-full justify-center items-center">
           <input
-            placeholder="Unesi ime"
+            placeholder="Унеси име"
             type="text"
             className="px-2 w-8/12 mb-4 text-sm bg-white border-b-gray-400 border-b-[1px] outline-none"
             value={firstName}
             onChange={(e) => setFirstName(e.target.value)}
           />
           <input
-            placeholder="Unesi prezime"
+            placeholder="Унеси презиме"
             type="text"
             className="px-2 w-8/12 mb-4 text-sm bg-white border-b-gray-400 border-b-[1px] outline-none"
             value={lastName}
             onChange={(e) => setLastName(e.target.value)}
           />
           <input
-            placeholder="Unesi broj telefona"
+            placeholder="Унеси број телефона"
             type="text"
             className="px-2 w-8/12 mb-4 text-sm bg-white border-b-gray-400 border-b-[1px] outline-none"
             value={phoneNumber}
@@ -78,7 +78,7 @@ export default function NewMembers({ setEnableAddNewMember }) {
             onChange={(e) => setSelectedCommite(e.target.value)}
           >
             <option default selected disabled>
-              -- Izaberi odbor --
+              -- Изабери одбор --
             </option>
             {committes.map((elem, index) => {
               return (
@@ -94,7 +94,7 @@ export default function NewMembers({ setEnableAddNewMember }) {
             onChange={(e) => setSelectedPosition(e.target.value)}
           >
             <option default selected disabled>
-              -- Izaberi poziciju --
+              -- Изабери позицију --
             </option>
             {positions.map((elem, index) => {
               return (
@@ -105,7 +105,7 @@ export default function NewMembers({ setEnableAddNewMember }) {
             })}
           </select>
           <button className="mt-5 w-8/12  hover:bg-[#042861] bg-[#06398b] active:bg-primary-active-color transition duration-500 text-white py-2 text-lg font-bold rounded cursor-pointer">
-            KREIRAJ
+            КРЕИРАЈ
           </button>
         </div>
       </form>

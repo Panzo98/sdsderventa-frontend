@@ -10,9 +10,9 @@ export default function PositionTableRow({ data, newId }) {
         { headers: { Authorization: localStorage.getItem("token") } }
       );
       dispatch({ type: "DELETE_POSITION", payload: data.id });
-      alert(`Pozicija ${data.title} uspjesno izbrisana!`);
+      alert(`Позиција ${data.title} успjешно избрисана!`);
     } catch (error) {
-      alert("Desila se greska prilikom brisanja pozicije!!");
+      alert("Дошло је до грешке приликом брисања позиције!");
     }
   };
   return (

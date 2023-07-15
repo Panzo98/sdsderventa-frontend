@@ -21,14 +21,14 @@ export default function Committe() {
         {data[0] && (
           <div className="flex w-full mb-2 text-[6px] xl:text-[10px]">
             <span className="w-[5%] font-semibold flex items-center justify-center">
-              ID
+              ИД
             </span>
             <span className="w-[85%] flex items-center justify-center font-semibold">
-              NAZIV
+              НАЗИВ
             </span>
-            <button className="w-[10%] flex items-center justify-center font-semibold">
-              UKLONI
-            </button>
+            <span className="w-[10%] flex items-center justify-center font-semibold">
+              УКЛОНИ
+            </span>
           </div>
         )}
         {data[0] ? (
@@ -38,7 +38,7 @@ export default function Committe() {
         ) : (
           //TODO OVO ISPOD SE PRIKAZUJE ISPOD LOADERA
           <span className="flex w-full justify-center items-center text-gray-500 font-semibold xl:font-medium">
-            -- NEMA ZAPISA --
+            -- НЕМА ЗАПИСА --
           </span>
         )}
       </div>

@@ -11,9 +11,9 @@ export default function TableRow({ data, newId }) {
         { headers: { Authorization: localStorage.getItem("token") } }
       );
       dispatch({ type: "DELETE_MEMBER", payload: data.id });
-      alert(`Clan ${data.firstName} ${data.lastName} uspjesno izbrisan!`);
+      alert(`Члан ${data.firstName} ${data.lastName} успjешно избрисан!`);
     } catch (error) {
-      alert("Desila se greska prilikom brisanja clana!");
+      alert("Дошло је до грешке приликом брисања члана!");
     }
   };
   return (
